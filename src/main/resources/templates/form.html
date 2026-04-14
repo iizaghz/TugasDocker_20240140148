@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #fff0f5;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #e91e63;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .radio {
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background: #d81b60;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Input Mahasiswa</h2>
+
+    <form th:action="@{/save}" method="post">
+
+        Nama:
+        <input type="text" name="nama" required>
+
+        NIM:
+        <input type="text" name="nim" required>
+
+        <div class="radio">
+            Jenis Kelamin:<br>
+            <input type="radio" name="jenisKelamin" value="Laki-laki"> Laki-laki<br>
+            <input type="radio" name="jenisKelamin" value="Perempuan"> Perempuan
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <a th:href="@{/home}">Kembali ke Home</a>
+</div>
+
+</body>
+</html>
