@@ -9,16 +9,20 @@
 4 screenshot :
 
 Halaman login
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/e425108a-b75e-4555-8c59-795ddf003088" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/957498d5-3ece-4fb2-a285-52d87ae13c7d" />
+
 
 Halaman home
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/359b1a4c-2fd4-4c22-b257-43fdf2cd1f22" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/393539b8-78f2-4f1a-9200-9fb9db063951" />
+
 
 Halaman form
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/d0d1d2ca-b613-46c8-be0e-f43b1e36f299" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c63356ae-327a-4164-b3ea-161125343ddd" />
+
 
 Halaman home setelah input
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ec020b8d-ba5f-48c1-8762-ea7b86b7e89b" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/77a10af2-8634-4833-b0fe-8e6cf41cbc8b" />
+
 
 5. Halaman web teman yang di pull 4 screenshot:
 
