@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #fff0f5;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #e91e63;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #ffe4ec;
+        }
+
+        .logout {
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Home (data tidak disimpan di database, data bersifat temporary)</h2>
+
+<div class="box">
+    <h3>MY Website 20240140148 </h3>
+    <p>Selamat datang di aplikasi!</p>
+
+    <a th:href="@{/form}">+ Input Data Mahasiswa</a>
+
+    <h3>Data Mahasiswa</h3>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jenis Kelamin</th>
+        </tr>
+
+        <tr th:if="${#lists.isEmpty(listMahasiswa)}">
+            <td colspan="4">Belum ada data</td>
+        </tr>
+
+        <tr th:each="mhs, iter : ${listMahasiswa}">
+            <td th:text="${iter.index + 1}"></td>
+            <td th:text="${mhs.nama}"></td>
+            <td th:text="${mhs.nim}"></td>
+            <td th:text="${mhs.jenisKelamin}"></td>
+        </tr>
+    </table>
+
+    <a class="logout" th:href="@{/logout}">Logout</a>
+</div>
+
+</body>
+</html>
